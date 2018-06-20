@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckgrndSL"
+    tools:context=".ShopList">
+
+    <EditText
+        android:id="@+id/PrdoductBar"
+        android:layout_width="284dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorWhite"
+        android:ems="10"
+        android:hint="@android:string/VideoView_error_button"
+        android:inputType="text|textAutoCorrect"
+        android:text="@string/SL_Prod"
+        android:textAppearance="@android:style/TextAppearance.Holo.Light.Medium.Inverse"
+        android:textColor="@color/colorGrey"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/ADD"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <EditText
+        android:id="@+id/QuantityBar"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/colorWhite"
+        android:singleLine="true"
+        android:text="Add a quantity"
+        android:textColor="@color/colorGrey"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/ADD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PrdoductBar" />
+
+    <ImageButton
+        android:id="@+id/ADD"
+        android:layout_width="95dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_add_circle_outline"
+        app:layout_constraintBottom_toTopOf="@+id/ProductList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DeleteButton" />
+
+    <ListView
+        android:id="@+id/ProductList"
+        android:layout_width="361dp"
+        android:layout_height="368dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="11dp"
+        android:background="#666F89"
+        android:cacheColorHint="@android:color/holo_blue_bright"
+        android:clickable="true"
+        android:divider="#3D4252"
+        android:dividerHeight="2dp"
+        android:fastScrollAlwaysVisible="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_optimizationLevel="none"
+        tools:ignore="MissingPrefix" />
+
+    <Button
+        android:id="@+id/DeleteButton"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="288dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ic_delete"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/toolbarSL"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/ADD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/act1_shoplist" />
+
+
+
+</android.support.constraint.ConstraintLayout>

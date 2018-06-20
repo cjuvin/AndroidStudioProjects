@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EldApp</string>
+    <string name="welcome_msg">Welcome to EldApp !</string>
+    <string name="welcomeShopList_msg">Welcome to the ShopList !</string>
+</resources>

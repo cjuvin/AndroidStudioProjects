@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SplashScreenTest</string>
+    <string name="wlcm_msg">Welcome on EldApp !\nWhat do you want to do ?</string>
+    <string name="act1_shoplist">ShopList</string>
+    <string name="act2_setAppointment">Set an Appointment</string>
+    <string name="act3_makeCoffee">Prepare a Coffee</string>
+    <string name="SL_Prod">Add a product</string>
+    <string name="SL_Qty">Add a quantity</string>
+</resources>
